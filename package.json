@@ -106,6 +106,7 @@
   },
   "private": true,
   "dependencies": {
+    "canvas-prebuilt": "^1.6.5-prerelease.1",
     "scrollreveal": "^3.4.0"
   }
 }

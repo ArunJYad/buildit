@@ -1,15 +1,16 @@
-jest.unmock("lodash-es/debounce");
-
 import HeroAnimation from "../hero.js";
 
-const canvas = document.createElement("canvas");
-const container = document.createElement("div");
-
-canvas.id = "js-canvas-hero";
-container.className = ".grav-c-hero";
-
 describe("HeroAnimation", () => {
-  it("should output a warning if canvas isn't available", () => {
-    const heroAnimation = new HeroAnimation(canvas, container);
+  it("should output a console warning if getContext isn't a function on canvas", () => {
+    const canvas = document.createElement("div");
+    const container = document.createElement("canvas");
+
+    jest.spyOn(global.console, "warn");
+
+    const hero = new HeroAnimation(canvas, container);
+
+    expect(global.console.warn).toHaveBeenCalledWith(
+      "the thingy bob doesn't support canvas. Bailing out."
+    );
   });
 });

@@ -9,7 +9,19 @@ const canvas = document.getElementById("js-canvas-hero");
 const container = document.querySelector(".grav-c-hero");
 
 if (canvas && container) {
-  const heroAnimation = new HeroAnimation(canvas, container);
+  let params = {
+    width: 0,
+    height: 0,
+    ctx: null,
+    points: [],
+    target: null,
+    animateHeader: true,
+    canvas: null,
+    container: null,
+    fadeBubble: 80
+  };
+
+  const heroAnimation = new HeroAnimation(canvas, container, params);
 }
 
 scroll.init();
