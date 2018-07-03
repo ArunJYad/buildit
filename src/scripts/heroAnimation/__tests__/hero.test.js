@@ -1,5 +1,3 @@
-jest.dontMock("../utils.js");
-
 import HeroAnimation from "../hero.js";
 
 let heroParams = {
