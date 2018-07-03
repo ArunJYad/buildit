@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Chnaged hero.js to a class
 - GSAP in now a dependency rather than using CDN
 
+### Fixed
+- changed babelrc and jest config files to fix js import issues
+
 ### Removed
 - CDN import for GSAP in footer
 
