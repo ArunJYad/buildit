@@ -5,6 +5,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Changed
+- Chnaged hero.js to a class
+- GSAP in now a dependency rather than using CDN
+
+### Removed
+- CDN import for GSAP in footer
 
 
 ## [4.1.1] - 2018-06-21
